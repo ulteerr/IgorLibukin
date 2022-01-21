@@ -1,0 +1,14 @@
+.menu {
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+
+    a {
+        display: block;
+        text-align: center;
+        width: 100%;
+
+
+    }
+}

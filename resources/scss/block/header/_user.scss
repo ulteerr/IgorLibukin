@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+}
+.user__avatar {
+  padding: 0 0 0 70px;
+  .logo{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+  }
+}
+.user__content {
+  padding-left: 14px;
+  font-weight: Bold;
+  color: $purpledark;
+  margin-left: 12px;
+
+}
+.user__name {
+  font-size: 24px;
+  line-height: 18px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-weight: bold;
+}
+.user__content {
+  font-size: 15px;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a {
+    color: $purpledark;
+}
+body {
+  font-family: 'Comfortaa', cursive;
+}
+.none {
+    display: none;
+}
+
+@import "media";
+@import "block/container";
+@import "block/header/header";
+@import "block/header/user";
+@import "block/header/contact";
+@import "block/header/line";
+@import "block/navigation/navigation";
+@import "block/navigation/nav";
+@import "block/navigation/intro";
+@import "block/navigation/pictures";
+@import "block/feedback/feedback";
+@import "block/feedback/form";
+@import "block/feedback/button";
+@import "block/feedback/contact";
+@import "block/feedback/dragAndDrop";
+@import "block/feedback/burger";
+@import "block/feedback/menu";
+@import "block/feedback/start";
+

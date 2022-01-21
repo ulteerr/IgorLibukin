@@ -1,0 +1,93 @@
+.form {
+    margin-top: 10px;
+    form {
+        padding: 30px 30px 6px 30px;
+        border: 3px solid $purple;
+        border-radius: 5px;
+        background-clip: padding-box;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+        overflow: hidden;
+    }
+
+    textarea {
+        resize: vertical;
+        width: 100%;
+        height: 110px;
+        border: 3px solid $purple;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+        border-radius: 10px;
+        background-clip: padding-box;
+        display: block;
+        font-family: "Comfortaa", cursive;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+        padding-top: 12px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    input {
+        width: 100%;
+        height: 48px;
+        border: 3px solid $purple;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+        border-radius: 10px;
+        background-clip: padding-box;
+        display: block;
+        font-family: "Comfortaa", cursive;
+        font-size: 18px;
+        font-weight: 300;
+        color: $purple;
+        margin-bottom: 20px;
+    }
+
+    input[type=submit] {
+        cursor: pointer;
+    }
+
+    input.name {
+        padding-left: 25px;
+    }
+
+    input.email {
+        padding-left: 25px;
+    }
+
+    input.message {
+        padding-left: 25px;
+    }
+
+    ::placeholder {
+        color: $purple;
+        padding-left: 10px;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border: 3px solid $purpledark;
+        padding-left: 10px;
+    }
+
+    .btn:hover {
+        border: 1px solid #253737;
+        text-shadow: #333333 0 1px 0;
+        background: #416b68;
+        background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+        background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+        background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+        color: #fff;
+    }
+
+    .btn:active {
+        margin-top: 1px;
+        text-shadow: #333333 0 -1px 0;
+        border: 1px solid #333333;
+        background: #ffCC00;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffCC00), to(#ff6600));
+        background: -webkit-linear-gradient(top, #ffcc00, #ff6600);
+        background-image: -ms-linear-gradient(top, #ffcc00 0%, #ff6600 100%);
+        color: #fff;
+        outline: none;
+    }
+}
