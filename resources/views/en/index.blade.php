@@ -5,7 +5,10 @@
     <div class="navigation">
         <div class="container">
             <div class="content">
-                @include ('en.block.nav')
+                <div class="nav">
+                    <img class="backimg" src="img/2.svg" alt="">
+                    @include ('en.block.nav')
+                </div>
                 <div class="intro">
                     <h1>Hello!</h1>
                     <h2>I am Igor</h2>
