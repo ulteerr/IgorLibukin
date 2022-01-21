@@ -56,7 +56,7 @@
         }
     }
 
-    .btn {
+    .button {
         background-color: $purple;
 
         border: none;
@@ -73,6 +73,12 @@
         font-size: 20px;
         font-weight: bold;
         font-family: "Comfortaa", cursive;
-        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            color: #FFFFFF;
+        }
     }
 }

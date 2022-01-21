@@ -117,7 +117,7 @@ body {
   border: none;
   border-radius: 7px;
 }
-.contact .btn {
+.contact .button {
   background-color: #796E9F;
   border: none;
   border-radius: 10px;
@@ -129,6 +129,11 @@ body {
   font-size: 20px;
   font-weight: bold;
   font-family: "Comfortaa", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .button .btn {
   color: #FFFFFF;
 }
 
@@ -423,7 +428,7 @@ body {
   justify-content: center;
   width: 300px;
   height: 200px;
-  border: 3px dotted #b8b8b8;
+  border: 3px dotted #796E9F;
   border-radius: 15px;
   background: #f3f3f3;
   opacity: 0.4;

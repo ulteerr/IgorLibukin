@@ -29,21 +29,26 @@
             </div>
             <div class="contact">
                 <div class="social">
-                    <a class="social__link phone" href="tel:+79215761975"><img src="{{ asset('img/Phone.svg') }}" alt=""></a>
-                    <a class="social__link telegram" href="https://t.me/igorlibukin"><img src="{{ asset('img/Telegram.svg') }}" alt=""></a>
-                    <a class="social__link whatsapp" href="https://wa.me/+79215761975"><img src="{{ asset('img/WhatsApp.svg') }}" alt=""></a>
+                    <a class="social__link phone" href="tel:+79215761975"><img src="{{ asset('img/Phone.svg') }}"
+                                                                               alt=""></a>
+                    <a class="social__link telegram" href="https://t.me/igorlibukin"><img
+                            src="{{ asset('img/Telegram.svg') }}" alt=""></a>
+                    <a class="social__link whatsapp" href="https://wa.me/+79215761975"><img
+                            src="{{ asset('img/WhatsApp.svg') }}" alt=""></a>
                     <a class="social__link linkedin"
                        href="https://linkedin.com/in/igorlibukin">
                         <img src="{{ asset('img/Linkedin.svg') }}" alt=""></a>
-                    <a class="social__link github" href="https://github.com/ulteerr/"><img src="{{ asset('img/Github.svg') }}" alt=""></a>
-                    <a class="social__link mail" href="mailto:example@gmail.com"><img src="{{ asset('img/Mail.svg') }}" alt=""></a>
+                    <a class="social__link github" href="https://github.com/ulteerr/"><img
+                            src="{{ asset('img/Github.svg') }}" alt=""></a>
+                    <a class="social__link mail" href="mailto:example@gmail.com"><img src="{{ asset('img/Mail.svg') }}"
+                                                                                      alt=""></a>
                 </div>
                 <div class="language">
                     <a href="/ru" class="ru"><p>Ru</p></a>
                     <a href="/en" class="eng"><p>Eng</p></a>
                 </div>
                 <div class="button">
-                    <button class="btn">Get in touch</button>
+                        <a class="btn" href="{{route('feedback.index')}}">Get in touch</a>
                 </div>
             </div>
         </div>
