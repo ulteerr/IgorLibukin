@@ -1,11 +1,6 @@
 <h2>Write me :</h2>
-@if (session('success'))
-    <div class="alert alert-success" role="alert">
-        {{ session('success') }}
-    </div>
-@endif
 @if ($errors->any())
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -13,19 +8,20 @@
         </ul>
     </div>
 @endif
-<form method="post" action="{{ route('feedback.send') }}">
+<form method="post" action="{{route('feedback.send')}}" id="feedbackForm">
     @csrf
     <div class="form-group">
-        <input type="text" class="form-control" name="name" placeholder="Name, surname"
-               required maxlength="100" value="{{ old('name') ?? '' }}">
+        <label for="cname"></label>
+        <input type="text" class="form-control required" name="name" placeholder="Name, surname"
+                value="{{ old('name') ?? '' }}">
     </div>
     <div class="form-group">
-        <input type="email" class="form-control" name="email" placeholder="Email"
-               required maxlength="100" value="{{ old('email') ?? '' }}">
+        <input type="email" class="form-control required" name="email" placeholder="Email"
+                value="{{ old('email') ?? '' }}">
     </div>
     <div class="form-group">
         <input type="tel" class="form-control" name="tel" placeholder="Phone"
-               required maxlength="20" value="{{ old('phone') ?? '' }}">
+                value="{{ old('phone') ?? '' }}">
     </div>
     <label for="upload">
         <div class="d-flex dnd_block mb-2">
@@ -44,8 +40,8 @@
         <div class="images-list"></div>
     </div>
     <div class="form-group">
-        <textarea class="form-control" name="message" placeholder="Message"
-                  required maxlength="500" rows="3">{{ old('message') ?? '' }}</textarea>
+        <textarea class="form-control required" name="message" placeholder="Message"
+                   rows="3">{{ old('message') ?? '' }}</textarea>
     </div>
     <div class="form-group">
         <button type="submit" class="btn form_button">Send</button>

@@ -20,7 +20,7 @@ Route::group(
 
         Route::post('/feedback', [\App\Http\Controllers\FeedBackController::class, 'send'])
             ->name('feedback.send');
+
     }
 
 );
-

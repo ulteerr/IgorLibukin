@@ -10,11 +10,12 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        $session = $request->session()->get('locale');
-        if($session === 'en' ) {
-            return view('en.index');
-        } else {
-            return view('ru.index');
-        }
+        return view('en.index');
+//        $session = $request->session()->get('locale');
+//        if($session === 'en' ) {
+//            return view('en.index');
+//        } else {
+//            return view('ru.index');
+//        }
     }
 }
