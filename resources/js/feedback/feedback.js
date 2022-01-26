@@ -1,3 +1,3 @@
 require('./burgerMenu');
-require('./dragAndDrop');
-require('./validate');
+require('./form');
+
