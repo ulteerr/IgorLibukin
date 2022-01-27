@@ -18,6 +18,9 @@ body {
 .none {
     display: none;
 }
+li {
+    list-style-type: none;
+}
 
 @import "media";
 @import "block/container";
@@ -31,6 +34,8 @@ body {
 @import "block/navigation/nav";
 @import "block/navigation/intro";
 @import "block/navigation/pictures";
+@import "block/navigation/li_line";
+@import "block/navigation/menu";
 @import "block/feedback/feedback";
 @import "block/feedback/form";
 @import "block/feedback/button";

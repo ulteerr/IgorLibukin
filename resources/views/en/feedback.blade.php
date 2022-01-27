@@ -6,8 +6,15 @@
 @endsection
 @section('main_content')
     <div class="start">
+        <div class="menu_click">
+            <ul>
+                <div class="li_line"></div>
+                <div class="block_li">
+                    <li><a class="nav__link" href="#">Menu</a></li>
+                </div>
+            </ul>
+        </div>
         <div class="burger"></div>
-        <p>Menu</p>
     </div>
     <div class="feedback">
         <div class="nav">

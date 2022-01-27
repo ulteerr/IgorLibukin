@@ -21,6 +21,8 @@ Route::group(
         Route::post('/feedback', [\App\Http\Controllers\FeedBackController::class, 'send'])
             ->name('feedback.send');
 
+        Route::get('/order', [\App\Http\Controllers\OrderController::class, 'index'])
+            ->name('order.index');
     }
 
 );

@@ -1,6 +1,6 @@
 const menu = document.querySelector('.menu')
 const burger = document.querySelector('.burger')
-const block = 10
+const block = 3
 
 for (let i = 0; i < block; i++) {
     let span = document.createElement('span')

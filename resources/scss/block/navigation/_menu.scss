@@ -1,0 +1,13 @@
+.menu_click {
+    .block_li {
+        display: inline-block;
+        font-size: 25px;
+        font-family: "Comfortaa", cursive;
+        font-weight: 400;
+        .nav__link {
+            display: inline-block;
+            vertical-align: middle;
+            color: $purple;
+        }
+    }
+}

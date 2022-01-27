@@ -57,7 +57,6 @@ function fileCheck(e) {
         addBlock('Invalid format, please upload ' +
             'files with .rar or .zip extension')
         for (let key in files) {
-            console.log(files[key].size)
             if (!types.includes(files[key].type)) {
                 continue
             } else if (files.length > 1) {
