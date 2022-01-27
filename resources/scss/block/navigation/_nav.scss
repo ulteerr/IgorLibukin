@@ -12,11 +12,48 @@
 
     }
 
-    .block_li {
+    .block_li, .block_li_middle {
         display: inline-block;
         padding-left: 10px;
     }
-    
+
+    li {
+        .arrow {
+            width: 35px;
+            height: 30px;
+            margin: 10px 10px;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span {
+            background-color: $purple;
+            position: absolute;
+            border-radius: 2px;
+            transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+            width:100%;
+            height: 4px;
+        }
+        span:nth-child(1){
+            transform: rotate(45deg) scaleX(0.7);
+            top: 13px;
+            left: -8px;
+
+        }
+        span:nth-child(2){
+            transform: rotate(-45deg) scaleX(0.7);
+            top: 13px;
+            left: 7px;
+        }
+        .open_arrow span:nth-child(1){
+            transform: rotate(-45deg) scaleX(0.7);
+        }
+        .open_arrow span:nth-child(2){
+            transform: rotate(45deg) scaleX(0.7);
+        }
+    }
+
     ul {
         margin: 160px 0 0 0;
         padding: 0;

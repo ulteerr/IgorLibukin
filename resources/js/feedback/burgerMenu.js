@@ -11,7 +11,7 @@ burger.addEventListener('click', (event) => {
     burger.classList.toggle("open")
     if(!menu.classList.contains('active')){
         menu.classList.add('active')
-        menu.style.maxHeight = menu.scrollHeight + 'px'
+        menu.style.maxHeight = (menu.scrollHeight * 5) + 'px'
     } else {
         menu.classList.remove('active')
         menu.style.maxHeight = 0
