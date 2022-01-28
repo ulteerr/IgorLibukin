@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@import "variables";
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a {
+    color: $purpledark;
+}
+body {
+    font-family: 'Comfortaa', cursive;
+}
+.none {
+    display: none;
+}
+li {
+    list-style-type: none;
+}

@@ -39,7 +39,7 @@
                        href="https://linkedin.com/in/igorlibukin">
                         <img src="{{ asset('img/Linkedin.svg') }}" alt=""></a>
                     <a class="social__link github" href="https://github.com/ulteerr/"><img
-                            src="{{ asset('img/Github.svg') }}" alt=""></a>
+                            src="{{ asset('img/github.svg') }}" alt=""></a>
                     <a class="social__link mail" href="mailto:example@gmail.com"><img src="{{ asset('img/Mail.svg') }}"
                                                                                       alt=""></a>
                 </div>
@@ -48,14 +48,33 @@
                     <a href="/en" class="eng"><p>Eng</p></a>
                 </div>
                 <div class="button">
-                        <a class="btn" href="{{route('feedback.index')}}">Get in touch</a>
+                    <a class="btn" href="{{route('contacts.index')}}">Get in touch</a>
                 </div>
             </div>
         </div>
         <div class="line"></div>
     </div>
 </header>
-@yield('main_content')
+<div class="start">
+    <div class="menu_click">
+        <ul>
+            <div class="li_line"></div>
+            <div class="block_li">
+                <li><a class="nav__link" href="#">Menu</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="burger"></div>
+</div>
+<div class="main_content">
+    <div class="nav">
+        <img class="backimg" src="{{asset('img/2.svg')}}" alt="">
+        <div class="menu">
+            @include('en.block.nav')
+        </div>
+    </div>
+    @yield('main_content')
+</div>
 </body>
 </html>
 

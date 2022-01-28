@@ -10,8 +10,9 @@ use Illuminate\Support\Facades\Mail;
 
 class FeedBackController extends Controller
 {
-    public function index(Request $request) {
-        return view('en.feedback');
+    public function index(Request $request)
+    {
+        return view('en.feedback.feedback');
 //        $session = $request->session()->get('locale');
 //        if ($session === 'en') {
 //            return view('en.feedback');
@@ -20,7 +21,8 @@ class FeedBackController extends Controller
 //        }
     }
 
-    public function send(Request $request) {
+    public function send(Request $request)
+    {
 
         $file = $request->file('file');
         if ($file) {
@@ -36,7 +38,8 @@ class FeedBackController extends Controller
         $data->message = $request->message;
 
         Mail::to('order@igorlibukin.ru')->send(new FeedbackMailer($data));
-        return redirect()->route('feedback.index')
+        return redirect()->route('contacts.index')
             ->with('success', 'Your message has been sent successfully');
     }
+
 }

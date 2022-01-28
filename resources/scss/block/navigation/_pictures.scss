@@ -1,57 +1,9 @@
 .pictures {
   position: relative;
-  margin-top: 35px;
-
-  .css {
-    position: absolute;
-    width: 60px;
-    right: 487px;
-    bottom: 254px;
-  }
-
-  .html {
-    position: absolute;
-    width: 60px;
-    right: 513px;
-    bottom: 417px;
-  }
-
-  .js {
-    position: absolute;
-    width: 60px;
-    left: 63px;
-    bottom: 368px;
-  }
-
-  .sql {
-    position: absolute;
-    width: 60px;
-    left: 80px;
-    bottom: 466px;
-  }
-  .cms {
-    position: absolute;
-    width: 60px;
-    left: 80px;
-    bottom: 466px;
-  }
-  .php {
-
-  }
 
   .comp {
     width: 500px;
     z-index: 1;
   }
 
-  .backimg {
-    position: fixed;
-    height: 1063px;
-    width: 1074px;
-    left: 878px;
-    top: 226px;
-    border-radius: 0;
-
-
-  }
 }

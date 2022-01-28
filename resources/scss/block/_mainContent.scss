@@ -1,0 +1,12 @@
+.main_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 10px 0;
+    color: $purpledark;
+    .nav ul {
+        margin: 0;
+    }
+    p {
+        margin-top: 10px;
+    }
+}

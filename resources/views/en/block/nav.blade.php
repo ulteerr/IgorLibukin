@@ -28,7 +28,8 @@
             <div>
                 <div class="li_line_middle"></div>
                 <div class="block_li_middle">
-                    <li><a class="nav__link_middle" href="#">Internet Shops</a></li>
+                    <li><a class="nav__link_middle"
+                           href="{{route('order.multi-page')}}">Multi-page</a></li>
                 </div>
             </div>
             <div>
@@ -40,7 +41,7 @@
             <div>
                 <div class="li_line_middle"></div>
                 <div class="block_li_middle">
-                    <li><a class="nav__link_middle" href="#">Improvements to the website</a></li>
+                    <li><a class="nav__link_middle" href="#">Improvements</a></li>
                 </div>
             </div>
         </div>
@@ -63,7 +64,7 @@
     <div>
         <div class="li_line"></div>
         <div class="block_li">
-            <li><a class="nav__link" href="{{route('feedback.index')}}">Hire me</a></li>
+            <li><a class="nav__link" href="{{route('contacts.index')}}">Hire me</a></li>
         </div>
     </div>
 

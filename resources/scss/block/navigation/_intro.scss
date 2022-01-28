@@ -1,6 +1,4 @@
 .intro {
-
-    margin: 107px 0 0 0;
     text-align: center;
 
 
@@ -8,7 +6,7 @@
         font-size: 79px;
         color: $purpledark;
         padding: 0;
-        margin: 40px 0 5px 0;
+        margin: 0 0 5px 0;
     }
 
     h2 {
@@ -37,21 +35,4 @@
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
-    .read {
-        font-family: "Comfortaa", cursive;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $purple;
-        border: none;
-        border-radius: 20px;
-        width: 240px;
-        height: 70px;
-        color: #FFFFFF;
-        margin-top: 25px;
-        font-weight: bold;
-        font-size: 25px;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
-    }
 }
