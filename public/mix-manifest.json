@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/feedback.js": "/js/feedback.js",
+    "/js/order.js": "/js/order.js",
+    "/js/multiPage.js": "/js/multiPage.js",
     "/css/app.css": "/css/app.css"
 }
